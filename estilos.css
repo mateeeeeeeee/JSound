@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 25px;  
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(44, 43, 43);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 25px;
+}
+
+#creditos {
+    list-style-type: square;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em 20em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#creditos li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+h1, 
+h2, 
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 120px;
+    padding: 15px 25px 15px 25px;
+}
+
+a {
+    border-bottom: 0px solid rgba(255, 255, 0);
+    margin-bottom: 0px;
+    transition: all 100ms ease;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#pagina-selecionada {
+    border-bottom-width: 5px;
+}
+
+a:hover, 
+#comecar h1:hover{
+    border-bottom-width: 5px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 50px;
+}
+
+ #losango {
+    background-color: yellow;
+    font-size: 35px;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 15px 15px;
+    transform: rotate(45deg);
+} 
+
+#volta-para-o-topo {
+    font-size: 35px;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 15px 15px;
+    color: black;
+}
+
+.fundo-amarelo {
+    background-color: yellow;
+    color: black;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+canvas {
+    border-top: 3px solid black;
+}
+
+#controles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 121px;
+    background-color: rgb(44, 43, 43);
+}
+
+#play {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    border-color: transparent transparent transparent yellow;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+}
+
+#play.playing {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+}
+
+#play:hover {
+    border-color: transparent transparent transparent rgb(185, 185, 0);
+}
+
+#bpmcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bpmcontainer p {
+    margin: 0;
+    padding: 0px 10px 6px 0px;
+}
+
+#inputbpm {
+    border: 2px solid black;
+    border-radius: 10%;
+
+    width: 50px;
+    font-size: 19px;
+    color: yellow;
+    background-color: rgb(44, 43, 43);
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    height: 28px;
+}
+  
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 400px; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #7a7a7a; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: yellow; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#tutorial p {
+    font-size: 1em;
+    text-align: center; 
+    margin-bottom: 200px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+ 
+@media (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 930px) {
+    .slidecontainer {
+        display: none;
+    }
+}
+
+@media (max-width: 699px) {
+
+    nav {
+        height: 98%;
+        position: fixed;
+        top: 0px;
+    }
+
+    nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main {
+        padding-left: 134px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .not-canvas {
+        display: flex;
+    }
+
+    .p-responsive {
+        font-size: 3rem;
+    }
+
+    .p-responsive2 {
+        font-size: 2rem;
+    }
+} 
+
+
+.checkbox input {
+    display: none;
+}
+
+
+.checkbox label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: black;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox input :checked  {
+    background: black;
+}
+
+.checkbox label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+
+.checkbox input:checked ~ :after {
+    left: 20px;
+    background: white;
+   }
+
+.checkbox label:active:after {
+ transform: scale(1.15, 0.85);
+}
+
+.modoClaro {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.modoEscuro {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}

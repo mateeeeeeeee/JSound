@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSound</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imgs/nota-musical-favicon.png">
+</head>
+<body class="modoEscuro">
+    <canvas id='canvas'></canvas>
+
+    <section id="controles">
+
+        <a href="index.html">Voltar</a>
+
+        <button id="play"></button>
+
+        <div id="bpmcontainer">
+            <p>BPM:</p>
+            <div class="slidecontainer">
+                <input type="range" min="40" max="240" value="120" class="slider" id="bpm">
+            </div>
+            <input id="inputbpm" min="40" max="240">
+        </div>
+
+        <a href="tutorial.html">Tutorial</a>
+    </section>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/tone.js"></script>
+    <script src="scripts/editor.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>

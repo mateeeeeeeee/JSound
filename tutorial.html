@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSound</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imgs/nota-musical-favicon.png">
+</head>
+<body class="not-canvas modoEscuro">
+    <nav>
+        <ul>
+            <li> 
+                <a href="index.html">Início</a>
+            </li>
+
+            <li>
+                <a href="editor.html">Editor</a>
+            </li>
+
+            <li>
+                <a href="tutorial.html" id="pagina-selecionada">Tutorial</a>
+            </li>
+            
+            <li>
+                <a href="creditos.html">Créditos</a>
+            </li>
+            <div class="checkbox">
+                <input id="teste" type="checkbox" checked>
+                <label for="teste"></label>
+            </div>
+        </ul>
+    </nav>
+
+    <main id="tutorial">
+        <h1><span class="fundo-amarelo">CO</span>mo criar a sua própria música?</h1>
+
+    
+        <div>
+            <img src="imgs/tutorial1.png" alt="" id="tutorial1">
+
+            <p>
+                Clique nos "quadradinhos" da tabela para adicionar um som. A nota varia 
+                de acordo com a posição vertical do quadrado, e na horizontal é apenas a 
+                sequência. Nesse exemplo, será tocado a nota dó, em seguida o ré, depois 
+                o mi, e assim por diante. O editor está na escala de dó, ou seja, ele tem 
+                aquela famosa sequência de notas: <mark>dó, ré, mi, fá, sol, lá, si,</mark> 
+                que depois se repete uma oitava  acima (um som mais agudo). 
+            </p>
+        </div>
+        
+        <div>
+            <img src="imgs/tutorial2.png" alt="" id="tutorial2">
+
+            <p>
+                É um pouco óbvio, mas esse botão <mark>inicia</mark> e <mark>para</mark> a música.
+            </p>
+        </div>
+        
+        <div>
+            <img src="imgs/tutorial3.png" alt="" id="tutorial3">
+
+            <p>
+                Aqui é onde você altera a <mark>velocidade</mark> da música. A sigla significa batidas por minuto 
+                (ou <i>beats per minute</i>). Se você ainda não sabe qual vai ser a velocidade de sua 
+                música, tente alterar o BPM enquanto a música toca. A velocidade é alterada em <mark>tempo 
+                real</mark>, e assim você consegue achar a velocidade perfeita. Você pode alterar arrastando o
+                quadradinho na barra, ou colocando um valor (note que o mínimo é <mark>40</mark> e o máximo é <mark>240</mark>).
+                Em telas menores a barra não aparece para liberar espaço.
+            </p>
+        </div>
+
+        <div>
+            <img src="imgs/tutorial4.png" alt="" id="tutorial4">
+
+            <p id="parte-final">
+                Agora que você aprendeu a criar uma música com o JSound, tente recriar essa música e veja o resultado!
+            </p>
+        </div>
+        
+    </main>
+    
+
+    <div id="losango"></div>
+    <a id="volta-para-o-topo" href="#">&#8593</a>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/modonoturno.js"></script>
+    <script src="scripts/imageResize.js"></script>
+</body>
+</html>
